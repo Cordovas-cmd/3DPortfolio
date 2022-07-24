@@ -1,6 +1,7 @@
 import './style.css';
 import * as THREE from 'three';
-import { TorusGeometry } from 'three';
+// import * as THREE from 'https://unpkg.com/three@0.127.0/nuild/three.module.js'
+import { TorusGeometry } from './three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // scene == container
