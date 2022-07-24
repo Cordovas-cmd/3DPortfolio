@@ -90,7 +90,7 @@ scene.add(love);
 
 //Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg')
+const moonTexture = new THREE.TextureLoader().load('marik.jpg')
 const normalTexture = new THREE.TextureLoader().load('normal.jpg')
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(5, 32, 32),
@@ -127,7 +127,7 @@ function moveCamera() {
   love.rotation.y += 0.01;
   love.rotation.z += 0.01;
 
-  //MOST IMPORTANT is chamge position of camera
+  //MOST IMPORTANT is change position of camera
   //top value will always eb negative so multiply it by negative number
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
@@ -135,6 +135,7 @@ function moveCamera() {
 }
 //event listener for scroll
 document.body.onscroll = moveCamera;
+document.body.onclick = moveCamera;
 moveCamera();
 //don't want to have to call render over and over so create a recursive function that gives infinite loop that auto renders
 function animate() {
