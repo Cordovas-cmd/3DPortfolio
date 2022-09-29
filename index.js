@@ -1,8 +1,8 @@
 import './style.css';
 // import * as THREE from '../node_modules/three';
-import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js'
-import { TorusGeometry } from './three';
-import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls';
+import * as THREE from './libs/three126/three.module.js'
+import { TorusGeometry } from './libs/three126';
+import { OrbitControls } from './libs/three126/OrbitControls';
 
 // scene == container
 const scene = new THREE.Scene();
