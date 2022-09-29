@@ -3,7 +3,10 @@ import './style.css';
 import * as THREE from './libs/three126/three.module.js'
 import { TorusGeometry } from './libs/three126';
 import { OrbitControls } from './libs/three126/OrbitControls';
-
+class App{
+	constructor(){
+		const container = document.createElement( 'div' );
+		document.body.appendChild( container );
 // scene == container
 const scene = new THREE.Scene();
 
@@ -155,5 +158,6 @@ function animate() {
 
   renderer.render( scene, camera );
 }
-
 animate()
+  }}
+  export { App };
